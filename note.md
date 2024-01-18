@@ -79,5 +79,11 @@ myform = new Form(); //创建一个实例（对象）
 myform.Text = "My Form!";
 myform.ShowDialog(); 
 ```
-
+# 类的三大成员
+* 属性Property
+  存储数据，这些数据组合起来表示类或对象当前的状态
+* 方法Method
+  由C语言里方法（function）进化而来，表示类或对象能做什么
+* 事件Event
+* 
   
