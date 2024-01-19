@@ -85,5 +85,6 @@ myform.ShowDialog();
 * 方法Method
   由C语言里方法（function）进化而来，表示类或对象能做什么
 * 事件Event
-* 
-  
+类或者对象用来通知其他类或对象的机制
+
+使用MSDN文档
