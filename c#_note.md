@@ -103,5 +103,81 @@ myform.ShowDialog();
 * 标识符 dientifier
 * 标点符号
 * 文本
-* 注释与空白
+* 注释与空白 (// or /**/)
 
+var x:自动推断变量类型
+
+* 变量是 存放数据的地方
+```c#
+double x;
+x= 3.0
+```
+
+* 方法（旧称函数）是处理数据的逻辑，又称算法
+```c#
+Calculator c = new Calculation{};
+int c = add(3,4)
+public int add(int a , int b)
+{
+  int result =a+b;  
+return result
+}
+```
+
+# 算法
+* 循环
+```c#
+static void Main(string[] args)
+{
+  Calculator c = new Calculator();
+  c.PrintXTo1(10)；
+}
+
+class Calculator
+{
+  public void PrintXTo1(int x)
+  {
+    for(int i=x;i>0;i--)
+    {
+      Console.WriteLine(i);
+    }
+  }
+}
+```
+* 递归
+```c#
+static void Main(string[] args)
+{
+  Calculator c = new Calculator();
+  c.PrintXTo1(10)；
+}
+
+class Calculator
+{
+  public void PrintXTo1(int x)
+  {
+    if (x ==1)
+    {
+      Console.WriteLine(x);
+    }
+    else
+    {
+      Console.WriteLine(x);
+      PrintXTo1(x -1);
+    }
+  }
+}
+``` 
+
+# 变量
+* 强类型变量受数据类型约束，弱类型变量不受数据类型约束
+c#是强类型变量，一个变量定义了一个类型，就不能当成别的类型用
+* dynamic可以模仿弱类型变量
+```c#
+dynamic myVar = 100;
+Console.WriteLine(myVar);
+myVar = "Mr.Okey"
+Console.WriteLine(myVar);
+```
+
+* 可以在电脑上performance monitor上去观察内存的分配
